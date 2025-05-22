@@ -53,11 +53,14 @@ example:
 ### What are the elements inside `React.createElemet()`?
 
 - Example:
-  `const heading = React.createElement(
+
+```
+const heading = React.createElement(
   "h1",
   { id: "heading", xyz: "123"},
   "Hello World from vismaya"
-)`
+);
+```
 
 - React element is nothing but a normal javascript object.
 - It has something called as props.
@@ -80,14 +83,15 @@ example:
 ### What is nested HTML element in react?
 
 - HTML example:
-<div id="parent">
+(<div id="parent">
   <div id="child">
     <h1>I'm a h1 tag</h1>
   </div>
-</div>
+</div>)
 
 - how to create the same using reactElement?
-`const nestedElement = React.createElement(
+```
+const nestedElement = React.createElement(
   "div", 
   { id: "parent"},
   React.createElement(
@@ -95,18 +99,20 @@ example:
     {"id": "child"},
     React.createElemet("h1", {}, "I'm a h1 tag")
     )
-  );`
+  );
+```
 
 ### How ro add a sibiling element?
 - HTML example:
-<div id="parent">
+(<div id="parent">
   <div id="child">
     <h1>I'm a h1 tag</h1>
     <h2>I'm a h2 tag</h2>
   </div>
-</div>
+</div>)
 
-`const nestedElement = React.createElement(
+```
+const nestedElement = React.createElement(
   "div", 
   { id: "parent"},
   React.createElement(
@@ -116,7 +122,8 @@ example:
     React.createElemet("h2", {}, "I'm a h2 tag")
     ]
     )
-  );`
+  );
+```
 
 - So for adding multiple children we will have to convert it into an array as shown in the above example.
 - It is an array of children.
