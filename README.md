@@ -83,11 +83,13 @@ const heading = React.createElement(
 ### What is nested HTML element in react?
 
 - HTML example:
-(<div id="parent">
+```
+<div id="parent">
   <div id="child">
     <h1>I'm a h1 tag</h1>
   </div>
-</div>)
+</div>
+````
 
 - how to create the same using reactElement?
 ```
@@ -104,12 +106,15 @@ const nestedElement = React.createElement(
 
 ### How ro add a sibiling element?
 - HTML example:
-(<div id="parent">)
-  (<div id="child">)
-    (<h1>I'm a h1 tag</h1>)
-    (<h2>I'm a h2 tag</h2>)
-  (</div>)
-(</div>)
+
+```
+<div id="parent">
+  <div id="child">
+    <h1>I'm a h1 tag</h1>
+    <h2>I'm a h2 tag</h2>
+  </div>
+</div>
+```
 
 ```
 const nestedElement = React.createElement(
