@@ -1,0 +1,23 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is Namaste React by Vismaya Nair",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vismayamohan/NamasteReact.git"
+  },
+  "keywords": [],
+  "author": "Vismaya Nair",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vismayamohan/NamasteReact/issues"
+  },
+  "homepage": "https://github.com/vismayamohan/NamasteReact#readme",
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  }
+}

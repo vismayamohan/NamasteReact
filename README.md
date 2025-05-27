@@ -91,7 +91,8 @@ const heading = React.createElement(
 </div>
 ````
 
-- how to create the same using reactElement?
+- How to create the same using reactElement?
+
 ```
 const nestedElement = React.createElement(
   "div", 
@@ -104,7 +105,7 @@ const nestedElement = React.createElement(
   );
 ```
 
-### How ro add a sibiling element?
+### How to add a sibiling element?
 - HTML example:
 
 ```
