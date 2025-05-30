@@ -1,11 +1,6 @@
-//HTML Nested structure
-{
-  /* <div id="parent">
-  <div id="child">
-    <h1>I'm a h1 tag...!!</h1>
-  </div>
-</div> */
-}
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 
 // Nested Html 
 const nestedElement = React.createElement("div", { id: "parent" }, [
