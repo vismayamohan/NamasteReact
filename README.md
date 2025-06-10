@@ -280,3 +280,55 @@ const nestedElement = React.createElement(
 
 ### What is browserslist?
 - To make our app compatible for older versions of browser we use browserlist.
+
+## Session - 3
+
+### What is script? And why to use them?
+- When we have to build a dev or production build of our project we have to write a long command. To avoid the same we can create script for our project instead of writing long commands.
+- We create script inside package.json.
+- Inside package.json there is a section for script, we can create different script for build, development etc.
+- We will be adding `"start": "parcel index.html"`
+- It will run our project in development mode.
+
+### How does this work?
+- We write the command that needs to be executed by npm in the script. So the new command will be `npm run start` or `npm start`. (We can only skip run for start command).
+
+### What is React Element?
+- Just like we have DOM Elements in HTML in React we have React Elemets which are kindoff equvalent to DOM elements. React Element is not a HTML Element it is an object. When we render that object on to DOM it becomes and HTML Element.
+
+#### React.createElemetnt => JS Object => Rendered => HTMLElement - using react.creatElement
+
+#### JSX => React.createElemetnt => JS Object => Rendered => HTMLElement - using JSX
+
+### What is JSX?
+- JSX is a javascript syntax which is easier to create React Element. JSX is not a part of React. React & JSX are different. React tries to merge HTML & JS together using JSX. JSX is a convension where we kindoff merge these HTML & JS together. JSX is not HTML inside JS. This is not HTML it is JSX. JSX is HTML/XML like syntax. JSX code is transpiled into React.createELement. We use camelCase for attribute in JSX.
+
+### How to create a H1 tag using JSX?
+- `const jsxHeading = <h1>Namste React using JSX 🎀</h1>;`
+
+### What is babel?
+- The browser(JS Engine) does not understands JSX. Any pieces of JS code is such that JSEngine understands it. But it does not understands JSX. JS Engine only understands ECMAScript.
+- Parcel helps in doing the job behind the back. Even before the code goes to the JS Engine it is transpiled first with the help of BABEL.
+- The code is transpiled even before the it goes into root.render().
+- As soon as we save the code babel converts the code quickly to a code that react will understand. Babel is transpiling our code. Babel is a JS compiler and we call this as a transpiler.
+
+### What is React Component?
+- There are two types of components
+  - Class based component (old way)
+  - Functional Component (new way)
+- Class based component uses javascript classes
+- Functional component uses functions to create component. 
+
+### What is react functional component?
+- It's a normal javascript function. While creating a component we need to start the name of the component using capital letter.
+ex. `const Heading = () => {}`
+- A functional component is normal javascript function which returns some JSX Element. Everything in react is component. We can all a component as many times as we want. 
+
+### What is component composition?
+- Composing two components into one another is known as component composition.
+
+### Can we write vanilla javascript inside JSX?
+- Yes, we can for that we have to use {} inside the JSX code. 
+
+### Can JSX protect our code from cross site scripting? What is cross site scripting?
+- Yes JSX does it. Cross site scripting is when we have an external attact through an API. JSX takes care of injection attack. JSX will escape the malacious attack. If we have an API and if it has malacious attack, JSX will take care of it and helps from attacking.
